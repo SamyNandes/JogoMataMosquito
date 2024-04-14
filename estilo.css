@@ -1,0 +1,14 @@
+.misquito{
+	position: relative;
+}
+.painel{
+	background-color: rgba(213, 213, 213, 0.44);
+	padding: 10px;
+	left: 10px;
+	bottom: 10px;
+	position:fixed 
+}
+body{
+	background-size: 100%;
+	background-image: url("imagens/bg.jpg");
+}

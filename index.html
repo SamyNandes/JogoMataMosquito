@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mate o Mosquito</title>
+	<link rel=stylesheet href="estilo.css">
+	<style>
+	html{
+	cursor: url(imagens/mata_mosca.png), auto;
+	}
+	</style>
+</head>
+<body>
+<img src="imagens/mosca.png" class="misquito" id="mosquitao" style="width:50px" onclick="clicado()">
+<div class="painel">
+			<div class="vidas">
+				<img id="v1" src="imagens/coracao_cheio.png" />
+				<img id="v2" src="imagens/coracao_cheio.png" />
+				<img id="v3" src="imagens/coracao_cheio.png" />
+			</div>
+
+			<div class="cronometro">Tempo restante: <span id="cronometro"></span></div>
+		</div>
+<script src="logica.js"></script>
+<script type="text/javascript">
+
+	tempo = 10
+	document.getElementById('cronometro').innerHTML = tempo
+	function time(){
+			tempo = tempo - 1
+			document.getElementById('cronometro').innerHTML = tempo
+			console.log(tempo)
+	}
+	setInterval(time, 1000);
+</script>
+</body>
+</html>
